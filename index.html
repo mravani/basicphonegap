@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi-medium-dpi" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme" />
+    <title>FooBar Web Design</title>
+</head>
+
+<body>
+    <div class="app">
+        <div data-role="page" id="home">
+            <header data-role="header">
+                <h1>FooBar Web Design</h1>
+            </header>        
+            <div data-role="content">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h3>Welcome to Foobar</h3>
+                <img class="banner" src="img/banner.png" />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum pellentesque justo, ac ornare nunc mattis et. Proin ac ligula mi. In hac habitasse platea dictumst. Etiam interdum magna et sagittis egestas. Integer commodo tempus sapien, sed auctor ante tempor at. Ut vel vehicula magna.
+                </p>
+                <a href="#contact" class="ui-shadow ui-btn ui-corner-all">Contact Us</a>
+
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2017</h3>
+            </footer>
+        </div>
+
+        <div data-role="page" id="about">
+            <header data-role="header">
+                <h1>About FooBar</h1>
+            </header>        
+            <div data-role="content">
+                <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about" class="ui-btn-active">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </nav>
+                <h3>About Us</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum pellentesque justo, ac ornare nunc mattis et. Proin ac ligula mi. In hac habitasse platea dictumst. Etiam interdum magna et sagittis egestas. Integer commodo tempus sapien, sed auctor ante tempor at. Ut vel vehicula magna.
+                </p>
+                <a href="#contact" class="ui-shadow ui-btn ui-corner-all">Contact Us</a>
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2017</h3>
+            </footer>
+        </div>
+
+        <div data-role="page" id="contact">
+            <header data-role="header">
+                <h1>Contact FooBar</h1>
+            </header>        
+            <div data-role="content">
+                <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+                </ul>
+                </nav>
+                <h3>Contact Us</h3>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.397813501407!2d-40.301320984574915!3d-20.283794486406705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb817f82dc5d5e7%3A0x8705d436327d9e3c!2sR.+Dr.+Ant%C3%B4nio+Bas%C3%ADlio%2C+890+-+Jardim+da+Penha%2C+Vit%C3%B3ria+-+ES%2C+29060-390!5e0!3m2!1spt-BR!2sbr!4v1493868685477" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <h3>Location</h3>
+                <ul>
+                    <li><strong>FooBar Web Design</strong></li>
+                    <li>Rua Dr. Antonio Basílio</li>
+                    <li>Vitória, ES. 29060-390</li>
+                    <li><strong>Email:</strong>murilo.ravani@gmail.com</li>
+                    <li><strong>Phone:</strong>+55 (27) 99232-1299</li>
+                </ul>
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2017</h3>
+            </footer>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.js"></script>
+</body>
+
+</html>
